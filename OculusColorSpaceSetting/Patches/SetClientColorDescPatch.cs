@@ -8,9 +8,9 @@ namespace OculusColorSpaceSetting.Patches
     {
         public static void Prefix(ref OVRPlugin.ColorSpace colorSpace)
         {
-            Plugin.Log.Debug($"{colorSpace}");
+            Plugin.Log.Debug($"Beafore : {colorSpace}");
             colorSpace = OVRPlugin.GetHmdColorDesc();
-            Plugin.Log.Debug($"{colorSpace}");
+            Plugin.Log.Debug($"After : {colorSpace}");
         }
     }
 }
