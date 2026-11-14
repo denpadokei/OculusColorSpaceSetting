@@ -1,6 +1,5 @@
 # OculusColorSpaceSetting
 
-[![Build and Release](https://github.com/denpadokei/OculusColorSpaceSetting/actions/workflows/build-and-release.yml/badge.svg)](https://github.com/denpadokei/OculusColorSpaceSetting/actions/workflows/build-and-release.yml)
 
 Oculus 向けに固定されていた色空間を、接続している HMD が申告する色空間に合わせる MOD です。
 
@@ -39,7 +38,8 @@ dotnet build .\OculusColorSpaceSetting\OculusColorSpaceSetting.csproj -c Release
 
 `BeatSaberDir` (または `GameDirectory`) に Beat Saber のインストール先を設定すると、ゲームの参照アセンブリを解決できます。
 
-GitHub Actions の `build-and-release.yml` が push ごとにビルドし、`X.X.X` 形式のタグを push するとリリースを作成します。
+
+> GitHub Actions によるビルドは未設定です。manifest の対象バージョン (1.11.1) の OVRPlugin に SetClientColorDesc が含まれず、CI でコードをコンパイルできないため。
 
 ## ライセンス
 
